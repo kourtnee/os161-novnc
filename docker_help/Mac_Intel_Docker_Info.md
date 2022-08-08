@@ -5,7 +5,7 @@
 * Click on the hyperlink Download Docker, to automatically download the file
 
 <p align="center">
-  <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/mac_intel.png" />
+  <img src="https://github.com/kourtnee/os161-novnc/blob/master/images/mac_intel.png" />
 </p>
 
 
