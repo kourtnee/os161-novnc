@@ -5,7 +5,7 @@
 * Click Mac with Apple chip and it should automatically start downloading
 
 <p align="center">
-  <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/windows1.png" />
+  <img src="https://github.com/kourtnee/os161-novnc/blob/master/images/windows1.png" />
 </p>
 
 * While that downloads open a terminal and enter (this step is in the previous link so if you’ve done it already you don’t have to do it again):  
