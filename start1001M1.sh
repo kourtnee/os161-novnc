@@ -1,10 +1,10 @@
 #!/bin/sh
 # Ubuntu 20.04LTS headless noVNC
-# Connect to http://localhost:6080/
+# Connect to http://localhost:7080/
 REPO=kourtnee/
-IMAGE=cse1001-novnc
+IMAGE=os161-novnc
 TAG=latest
-URL=http://localhost:6080
+URL=http://localhost:7080
 
 if [ -z "$SUDO_UID" ]
 then
@@ -14,13 +14,13 @@ then
 else
   # in a sudo script
   USER_ID=${SUDO_UID}
-  USER_NAME=cse1001
+  USER_NAME=cse4001
 fi
 
 docker run --detach \
-  --publish 6080:80 \
+  --publish 7080:80 \
   --volume "${PWD}":/home/cse1001/workspace:rw \
-  --env USERNAME=cse1001 --env PASSWORD=java --env USERID=${USER_ID} \
+  --env USERNAME=cse4001 --env PASSWORD=cpp --env USERID=${USER_ID} \
   --env VNC_PASSWORD=changeme \
   --env RESOLUTION=1400x800 \
   --platform linux/amd64 \
@@ -31,11 +31,11 @@ sleep 5
 
 if [ -z "$SUDO_UID" ]
 then
-     open -a firefox http://localhost:6080 \
-  || xdg-open http://localhost:6080 \
-  || echo "Point your web browser at http://localhost:6080"
+     open -a firefox http://localhost:7080 \
+  || xdg-open http://localhost:7080 \
+  || echo "Point your web browser at http://localhost:7080"
 else
-     su cse1001 -c 'open -a firefox http://localhost:6080' \
-  || su cse1001 -c 'xdg-open http://localhost:6080' \
-  || echo "Point your web browser at http://localhost:6080"
+     su cse1001 -c 'open -a firefox http://localhost:7080' \
+  || su cse1001 -c 'xdg-open http://localhost:7080' \
+  || echo "Point your web browser at http://localhost:7080"
 fi
