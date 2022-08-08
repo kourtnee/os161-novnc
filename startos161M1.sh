@@ -35,7 +35,7 @@ then
   || xdg-open http://localhost:7080 \
   || echo "Point your web browser at http://localhost:7080"
 else
-     su cse1001 -c 'open -a firefox http://localhost:7080' \
-  || su cse1001 -c 'xdg-open http://localhost:7080' \
+     su cse4001 -c 'open -a firefox http://localhost:7080' \
+  || su cse4001 -c 'xdg-open http://localhost:7080' \
   || echo "Point your web browser at http://localhost:7080"
 fi
