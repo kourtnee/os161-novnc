@@ -3,7 +3,7 @@
 
 ## These set the variables to pull from the proper repo on docker hub ##
 $REPO="kourtnee/"
-$IMAGE="cse1001-novnc"
+$IMAGE="os161-novnc"
 $TAG="latest"
 $VNC_PASS="changeme"
 
@@ -11,7 +11,7 @@ $VNC_PASS="changeme"
 $RESOL="1440x900"
 
 ## Run command for docker ##
-docker run -d -p 6080:80 -v "$(PWD):/home/cse1001/workspace:rw" -e "RESOLUTION=${RESOL}" -e "VNC_PASSWORD=${VNC_PASS}" --name "${IMAGE}-run" "${REPO}${IMAGE}:${TAG}"
+docker run -d -p 7080:80 -v "$(PWD):/home/cse4001/workspace:rw" -e "RESOLUTION=${RESOL}" -e "VNC_PASSWORD=${VNC_PASS}" --name "${IMAGE}-run" "${REPO}${IMAGE}:${TAG}"
 
 # -d is for detach, this makes it so there isn't a terminal session running in you command line
 # -p is for publish, this makes a port available to services outside of docker, in this case so
@@ -29,4 +29,4 @@ docker run -d -p 6080:80 -v "$(PWD):/home/cse1001/workspace:rw" -e "RESOLUTION=$
 #	to differentiate between versions of an image if they exist
 
 Start-Sleep -s 5
-Start http://localhost:6080
+Start http://localhost:7080
