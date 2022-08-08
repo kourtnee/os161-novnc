@@ -7,7 +7,7 @@
 * Click Windows and it should automatically start downloading
 
 <p align="center">
-  <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/windows1.png" />
+  <img src="https://github.com/kourtnee/os161-novnc/blob/master/images/windows1.png" />
 </p>
 
 * Once it’s downloaded click on the file, and follow the install wizard 
@@ -25,5 +25,5 @@ https://docs.microsoft.com/en-us/windows/wsl/install-manual
 * Click 64-bit Git under the Standalone Installer header
 
 <p align="center">
-  <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/windows2.png" />
+  <img src="https://github.com/kourtnee/os161-novnc/blob/master/images/windows2.png" />
 </p>
