@@ -14,9 +14,10 @@ Based on the work by [Doro Wu](https://github.com/fcwu), see on [Docker](https:/
 Important
 ----------------
 
-* If you plan to have more than one container running, make sure you use different ports. The run scripts for this project default to 6080. 
+* If you plan to have more than one container running, make sure you use different ports. The run scripts for this project default to 7080. 
 * Default username inside the container: cse4001
 * Default password inside the container: cpp
+* The auto run scripts automatically try to open the Firefox web browser. If you don't want to use that you can manually connect in the browser of your choice with: http://127.0.0.1:7080/
 
 <p>&nbsp;</p>  
 
@@ -35,10 +36,10 @@ docker build . -t os161-novnc
 
 Default run command:
 ```
-docker run -d -p 6080:80 -v $PWD:/home/cse4001/workspace:rw -e VNC_PASSWORD=changeme --name os161 os161-novnc
+docker run -d -p 7080:80 -v $PWD:/home/cse4001/workspace:rw -e VNC_PASSWORD=changeme --name os161 os161-novnc
 ```
 
-Browse http://127.0.0.1:6080/
+Browse http://127.0.0.1:7080/
 
 * You can add ```--rm``` before the -d tag to have the container automatically removed when stopped (be careful about where you save your work in this instance).
 * You can also edit the screen resolution by adding ```-e RESOLUTION=preference``` before the -v tag, where preference would be replaced by your preferred resolution.
