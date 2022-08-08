@@ -9,7 +9,7 @@ Stop the container with the command (name is found in NAMES column):
 
 Example:  
 <p align="center">
-  <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/nav1.png" />
+  <img src="https://github.com/kourtnee/os161-novnc/blob/master/images/nav1.png" />
 </p>
 
 ## 2. Remove the container you no longer want  
@@ -20,7 +20,7 @@ Remove the container with the command (name should be the same as the previous):
 
 Example:
 <p align="center">
-  <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/nav2.png" />
+  <img src="https://github.com/kourtnee/os161-novnc/blob/master/images/nav2.png" />
 </p>
 
 ## 3. Edit the start script for your platform, and rerun the script.  
@@ -29,7 +29,7 @@ You can also see all the images you have to use as a base for containers with th
 
 Example:
 <p align="center">
-  <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/nav3.png" />
+  <img src="https://github.com/kourtnee/os161-novnc/blob/master/images/nav3.png" />
 </p>
 
 If the container shows up in for the “docker ps -a” command and not the “docker container ls” command, or you try to connect to the novnc session in your browser and it fails, 
