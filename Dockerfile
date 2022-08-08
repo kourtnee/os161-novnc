@@ -15,9 +15,9 @@ ENV LIBGL_ALWAYS_INDIRECT=1
 ######
 #Create default non-root user for CSE1001
 ######
-ENV USERNAME=cse1001
+ENV USERNAME=cse4001
 ENV USERID=${USER_ID}
-ENV PASSWORD=java
+ENV PASSWORD=cpp
 
 # built-in packages
 RUN apt-get update && apt-get upgrade -y && apt-get install apt-utils -y \
