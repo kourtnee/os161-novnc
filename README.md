@@ -1,4 +1,4 @@
-CSE1001 Ubuntu Docker with novnc
+CSE4001 Ubuntu Docker with novnc
 ===================
 
 Docker image to provide HTML5 VNC interface to access a Ubuntu 20.04 XFCE desktop environment.
