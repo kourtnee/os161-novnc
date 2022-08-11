@@ -14,6 +14,7 @@ Based on the work by [Doro Wu](https://github.com/fcwu), see on [Docker](https:/
 Important
 ----------------
 
+* For help installing and using docker with this project go [here](https://github.com/kourtnee/os161-novnc/tree/master/docker_help)
 * If you plan to have more than one container running, make sure you use different ports. The run scripts for this project default to 7080. 
 * Default username inside the container: cse4001
 * Default password inside the container: cpp
